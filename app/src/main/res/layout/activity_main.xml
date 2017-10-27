@@ -6,10 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.example.codescrum.moviesexample.MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btn_getMovies"
-        android:text="Get Movies"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>
