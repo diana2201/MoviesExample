@@ -10,11 +10,12 @@ import retrofit2.converter.gson.GsonConverterFactory
 class RestApi{
 
     val retrofit: Retrofit = Retrofit.Builder()
-            .baseUrl("https://api.themoviedb.org/3/movie/")
+            .baseUrl("https://api.themoviedb.org/3/")
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-    val popularApi = retrofit.create(MoviesService::class.java)
+    val moviesApi = retrofit.create(MoviesService::class.java)
+
 
 }
